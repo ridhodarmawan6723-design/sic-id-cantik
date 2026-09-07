@@ -7,15 +7,27 @@
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
  ✓ Compiled successfully
    Linting and checking validity of types ...
-Failed to compile.
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6) 
+   Finalizing page optimization ...
+   Collecting build traces ...
 
-./app/layout.tsx:3:8
-Type error: Cannot find module or type declarations for side-effect import of './globals.css'.
+Route (app)                              Size     First Load JS
+┌ ○ /                                    67.6 kB         148 kB
+├ ○ /_not-found                          882 B          81.3 kB
+├ ○ /api/get-data                        0 B                0 B
+└ λ /api/telegram-notify                 0 B                0 B
++ First Load JS shared by all            80.4 kB
+  ├ chunks/472-2631a8b12d51eb6e.js       27.5 kB
+  ├ chunks/fd9d1056-16f14d1599bb12d9.js  50.9 kB
+  ├ chunks/main-app-7315b673fb50b555.js  232 B
+  └ chunks/webpack-a2d5e31f4f417bb5.js   1.75 kB
 
-[0m [90m 1 | [39m[36mimport[39m type { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m[33m;[39m[0m
-[0m [90m 2 | [39m[36mimport[39m { [33mInter[39m } [36mfrom[39m [32m"next/font/google"[39m[33m;[39m[0m
-[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
-[0m [90m   | [39m       [31m[1m^[22m[39m[0m
-[0m [90m 4 | [39m[0m
-[0m [90m 5 | [39m[36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m] })[33m;[39m[0m
-[0m [90m 6 | [39m[0m
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
