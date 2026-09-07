@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 
@@ -31,7 +32,9 @@ export default function CatalogPage() {
 
   return (
     <div id="catalogPage" className="visible-section fade-section">
-      {/* SALIN SEMUA HTML DARI index.html KE SINI (NAV, CAROUSEL, CTA, SEARCH, TAB, PRODUCT GRID, FOOTER) */}
+      {/* ⚠️ WAJIB: SALIN SEMUA HTML DARI index.html KE SINI */}
+      {/* Mulai dari <nav> sampai <footer> */}
+      
       <nav className="border-b border-slate-800/80 bg-[#0d1117]/90 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col items-center justify-center gap-2">
           <div className="flex items-center justify-center gap-3">

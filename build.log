@@ -17,7 +17,7 @@
    Collecting build traces ...
 
 Route (app)                              Size     First Load JS
-┌ ○ /                                    67.6 kB         148 kB
+┌ ○ /                                    67.3 kB         148 kB
 ├ ○ /_not-found                          882 B          81.3 kB
 ├ ○ /api/get-data                        0 B                0 B
 └ λ /api/telegram-notify                 0 B                0 B
